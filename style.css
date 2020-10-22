@@ -3,7 +3,7 @@
 	--secondaryColor: white;
 	--mainText: black;
 	--secondaryText: #4b5156;
-	--borderColor: #292929;
+	--borderColor: #c2c2c2;
 }
 html,
 body {
@@ -75,7 +75,7 @@ h6 {
 .greeting-wrapper {
 	display: grid;
 	align-content: center;
-	border: 2px dashed lightcoral;
+	justify-content: center;
 	min-height: 10em;
 }
 .intro-wrapper {
@@ -86,21 +86,62 @@ h6 {
 	grid-template-rows: 3em 30em;
 	grid-template-columns: 1fr 1fr;
 	grid-template-areas: "nav-wrapper nav-wrapper" "left-column right-column";
-	-webkit-box-shadow: 6px 14px 17px 0px rgba(0, 0, 0, 0.75);
-	-moz-box-shadow: 6px 14px 17px 0px rgba(0, 0, 0, 0.75);
-	box-shadow: 6px 14px 17px 0px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+	box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
 }
 .nav-wrapper {
 	grid-area: nav-wrapper;
+	border-radius: 5px 5px 0 0;
 	border-bottom: 1px solid var(--borderColor);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--mainColor);
 }
-
+#navigation {
+	margin: 0;
+	padding: 10px;
+}
+#navigation {
+	display: inline-block;
+	margin-right: 5px;
+	margin-left: 5px;
+}
 .left-column {
 	grid-area: left-column;
+	align-items: center;
+}
+#profile_pic {
+	height: 200px;
+	width: 200px;
 }
 
 .right-column {
 	grid-area: right-column;
+}
+
+.dots-wrapper {
+	display: flex;
+}
+.dots {
+	background-color: black;
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	-webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+	box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+	margin: 5px;
+}
+#dot-one {
+	background-color: #fc6058;
+}
+#dot-two {
+	background-color: #fec02f;
+}
+#dot-three {
+	background-color: #2aca3e;
 }
 
 @media screen and (max-width: 1200px) {
