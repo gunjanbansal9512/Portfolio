@@ -30,13 +30,13 @@
 						</div>
 						<ul id="navigation">
 							<li>
-								<a href="#">Contact</a>
+								<a href="#contact-form">Contact</a>
 							</li>
 						</ul>
 					</div>
 					<div class="left-column">
 						<img src="images/MyAvatar.jpeg" id="profile_pic" />
-						<h5 style="text-align: center; line-height: 0">
+						<!-- <h5 style="text-align: center; line-height: 0">
 							Personalize Theme
 						</h5>
 						<div id="theme-option">
@@ -48,7 +48,7 @@
 						<p id="setting-notes">
 							*Theme option will be saved for <br />
 							your next visit.
-						</p>
+						</p> -->
 					</div>
 					<div class="right-column">
 						<div id="preview-shadow">
@@ -121,27 +121,60 @@
 		<section class="s1">
 			<div class="main-container">
 				<h3 style="text-align: center">My Projects</h3>
+
 				<div class="post-wrapper">
 					<div class="post">
 						<img class="thumbnail" src="images/TestManagementSystem.PNG" />
 						<div class="post-preview">
-							<h6>Test Management System</h6>
+							<h6 class="post-titile">Test Management System</h6>
 							<p class="post-intro">
-								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
-								recusandae itaque enim et, quidem suscipit aliquid obcaecati
-								blanditiis, sapiente necessitatibus neque doloribus atque
-								tempora harum, excepturi cumque reprehenderit minima odit.
+								Test Management System is designed and built to maintain the
+								tests conducted by the colleges.
 							</p>
+							<a href="post.html">Read More </a>
+						</div>
+					</div>
+					<div class="post">
+						<img class="thumbnail" src="images/SmartHRMS.PNG" />
+						<div class="post-preview">
+							<h6 class="post-titile">SMARTHRMS</h6>
+							<p class="post-intro">
+								SMARTHRMS is the Mobile Application which is build to manage the
+								Human Resources tasks smartly and efficiently.
+							</p>
+							<a href="post.html">Read More </a>
 						</div>
 					</div>
 
-					<div class="post"></div>
-					<div class="post"></div>
+					<div class="post">
+						<img class="thumbnail" src="images/GaonBazar.PNG" />
+						<div class="post-preview">
+							<h6 class="post-titile">GaonBazar</h6>
+							<p class="post-intro">
+								GaonBazar is a online shopping platform for rural area of India.
+								Where rural people can order without any fear of online fraud.
+							</p>
+							<a href="post.html">Read More </a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
 		<section class="s2">
-			<div class="main-container">Contact</div>
+			<div class="main-container">
+				<h3 style="text-align: center">Contact</h3>
+				<form id="contact-form">
+					<label>Name</label>
+					<input class="input-field" type="text" name="name" required />
+					<label>Subject</label>
+					<input class="input-field" type="text" name="subject" required />
+					<label>Email</label>
+					<input class="input-field" type="email" name="email" required />
+					<label>Message</label>
+					<textarea class="input-field" name="message"></textarea>
+					<input id="submit-btn" type="submit" value="Send" />
+				</form>
+			</div>
 		</section>
 	</body>
 </html>
